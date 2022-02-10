@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.2%;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    place-items: center;
+}
+main {
+    align-self: start;
+}
+input[type="number"] {
+    margin: 20px auto;
+    width: 180px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border: 4px solid;
+    border-color: #FE5F55;
+    border-radius: 50px;
+}
+input[type="button"] {
+    width: 120px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border: 4px solid;
+    border-color: #FE5F55;
+    border-radius: 50px;
+}
+input[type="button"]:hover {
+    background-color: #FE5F55;
+    transform: scale(1.2);
+}
+h1{
+    margin: 20px;
+    font-weight: bold;
+    font-size: 4rem;
+}
+button {
+    width: 80px;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #FE5F55;
+    color: #C7EFCF;
+}
+p {
+    font-size: 2rem;
+}
+
+.Opciones {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+    place-items: center;
+    gap: 5px;
+}
+.descuento {
+    text-transform: capitalize;
+    text-align: center;
+}
+.Resultado {
+    display: block;
+    text-align: center;
+}
+span#resultado {
+    display: flex;
+    margin-top: 20px;
+    font-size: 3rem;
+    justify-content: center;
+}
